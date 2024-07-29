@@ -1,0 +1,19 @@
+{
+  "name": "leon",
+  "version": "1.0.0",
+  "description": "first template from Elzero web school for pure HTML,CSS templates",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eldiaby/Leon.git"
+  },
+  "author": "Eldiaby",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eldiaby/Leon/issues"
+  },
+  "homepage": "https://github.com/eldiaby/Leon#readme"
+}
