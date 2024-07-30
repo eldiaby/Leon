@@ -1,6 +1,7 @@
 /* start of global sittings */
 :root {
   --main-font-color: #777;
+  --main-them-color:#10cab7;
 }
 
 
@@ -24,3 +25,22 @@ body {
 }
 /* End of global sittings */
 /* ====================================================================================== */
+/* start of global component */
+
+.grid {
+  display: grid;
+}
+
+.grid--col-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--col-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--col-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+/* End of global component */
+

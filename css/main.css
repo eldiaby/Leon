@@ -54,7 +54,7 @@
 
 /* to show && hide the nav links */
 
-.header-nav:hover ul{
+.header-nav:hover ul {
   display: block;
 }
 
@@ -91,7 +91,7 @@
   transition: all 1s;
 }
 
-.header-nav ul li:not(:last-child) a{
+.header-nav ul li:not(:last-child) a {
   border-bottom: 0.1rem solid currentColor;
 }
 
@@ -100,7 +100,81 @@
   color: #000;
 }
 
-
-
 /* End of  header */
-/* ====================================================================================== */
+/* ========================================================================================== */
+/* Start of  landing section */
+
+.section-landing {
+  height: calc(100vh - 6.4rem);
+  background-size: cover;
+  background-image: url(../images/landing.jpg);
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-text {
+  width: 36rem;
+  max-width: 100%;
+  text-align: center;
+}
+
+.landing-primary {
+  margin: 0;
+  color: var(--main-them-color);
+  font-size: 4.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.landing-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  font-weight: 600;
+  /* text-transform: uppercase; */
+  /* color: #000; */
+}
+
+/* End of  landing section */
+/* ========================================================================================== */
+/* Start of  features section */
+
+.section-feature {
+  background-color: #f6f6f6;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.section-feature .container {
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  gap: 8.6rem;
+  align-items: center;
+  text-align: center;
+}
+
+.feature-icon {
+  color: var(--main-them-color);
+  font-size: 3.6rem;
+  margin-bottom: 3.6rem;
+}
+
+.feature-title {
+  color: #000;
+  text-transform: capitalize;
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 3rem 0;
+}
+
+.feature-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  opacity: 0.7;
+}
+
+/* End of  features section */
+/* ========================================================================================== */
+/* Start of                  section */
+/* End of                       section */
