@@ -2,6 +2,10 @@
 :root {
   --main-font-color: #777;
   --main-them-color:#10cab7;
+  --secondry-them-color:#2c4577;
+  --heading-primary-color: #ebeced;
+  --section-padding: 6rem;
+  --section-background: #f6f6f6;
 }
 
 
@@ -31,16 +35,28 @@ body {
   display: grid;
 }
 
-.grid--col-2 {
-  grid-template-columns: repeat(2, 1fr);
+.grid--col-3-responsive {
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
 }
 
-.grid--col-3 {
-  grid-template-columns: repeat(3, 1fr);
+.heading-primary {
+  color: var(--heading-primary-color);
+  font-size: 10rem;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: -0.3rem;
+  margin: 0;
+  text-transform:capitalize;
 }
 
-.grid--col-4 {
-  grid-template-columns: repeat(4, 1fr);
+.heading-primary-description {
+  color: #000;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: -3rem 0 0 0;
+  text-align: center;
 }
+
+
 /* End of global component */
 

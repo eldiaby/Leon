@@ -63,7 +63,7 @@
 .header-nav ul {
   list-style: none;
   text-decoration: none;
-  background-color: #f6f6f6;
+  background-color: var(--section-background);
   margin: 0;
   padding: 0;
   position: absolute;
@@ -77,7 +77,7 @@
   position: absolute;
   border-width: 1rem;
   border-style: solid;
-  border-color: transparent transparent #f6f6f6 transparent;
+  border-color: transparent transparent var(--section-background) transparent;
   right: 0.5rem;
   top: -2rem;
 }
@@ -86,6 +86,7 @@
   display: block;
   min-width: 20rem;
   padding: 1.5rem;
+  font-size: 2.4rem;
   text-decoration: none;
   color: #333;
   transition: all 1s;
@@ -142,13 +143,12 @@
 /* Start of  features section */
 
 .section-feature {
-  background-color: #f6f6f6;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  background-color: var(--section-background);
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
 }
 
 .section-feature .container {
-  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
   gap: 8.6rem;
   align-items: center;
   text-align: center;
@@ -176,5 +176,115 @@
 
 /* End of  features section */
 /* ========================================================================================== */
-/* Start of                  section */
-/* End of                       section */
+/* Start of services section */
+
+.section-services {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+
+.services-content {
+  align-items: center;
+  gap: 3rem;
+  margin-top: 10rem;
+}
+
+.srv {
+  display: flex;
+  margin-bottom: 2rem;
+  align-items: flex-start;
+  gap: 2.4rem;
+}
+
+.srv-icon {
+  color: var(--main-them-color);
+  font-size: 2.8rem;
+}
+
+.srv-title {
+  font-size: 1.8rem;
+  color: #000;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.srv-description {
+  line-height: 1.8;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.servece-image {
+  text-align: center;
+  position: relative;
+}
+
+.servece-image::after {
+  content: "";
+  background-color: var(--secondry-them-color);
+  width: 10rem;
+  height: calc(100% + 10rem);
+  display: block;
+  position: absolute;
+  top: -5rem;
+  right: 2rem;
+  z-index: -1;
+}
+
+.servece-image img {
+  width: 26rem;
+}
+
+/* hide image in the screen under the large screen */
+@media (max-width: 1199px) {
+  .servece-image {
+    display: none;
+  }
+  /* .services-content {
+    grid-template-columns: repeat(2, 1fr)
+  } */
+}
+
+/* End of services section *
+/* ========================================================================================== */
+/* Start of portfolio section */
+
+.section-portfolio {
+  background-color: var(--section-background);
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding)
+}
+
+.portfolio-content {
+  margin-top: 8.6rem;
+  gap: 3.6rem;
+}
+
+.portfolio-card {
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 0 0.2rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-image {
+  max-width: 100%;
+}
+
+.card-text {
+  padding: 2rem;
+  color: #000;
+}
+
+.card-text-title {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.card-text-description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+
+/* End of  portfolio section */
