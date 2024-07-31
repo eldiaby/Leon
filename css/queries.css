@@ -1,3 +1,18 @@
+@media (max-width: 991px) {
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-image::before,
+  .about-image::after {
+    display: none;
+  }
+  .about-image {
+    align-items: center;
+    margin: 0 auto 5.6rem;
+  }
+}
+
 @media (max-width: 767px) {
   .srv {
     flex-direction: column;

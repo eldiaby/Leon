@@ -98,7 +98,7 @@
 
 .header-nav ul li a:hover {
   padding-left: 2.5rem;
-  color: #000;
+  color: var(--main-them-color);
 }
 
 /* End of  header */
@@ -288,3 +288,75 @@
 }
 
 /* End of  portfolio section */
+/* ========================================================================================== */
+/* Start of about section */
+
+.section-about {
+  padding-top: var(--section-padding);
+  padding-bottom:calc(var(--section-padding) + 6rem)
+}
+
+.about-content {
+  margin-top: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about-image {
+  position: relative;
+  width: 25rem;
+  height: 37.5rem;
+}
+
+.about-image::before {
+  content: "";
+  position: absolute;
+  background-color: #ebeced;
+  width: 8rem;
+  height: calc(100% + 8rem);
+  top: -4rem;
+  left: -2rem;
+  z-index: -1;
+}
+
+.about-image::after {
+  content: "";
+  width: 10rem;
+  height: 30rem;
+  display: block;
+  position: absolute;
+  border-bottom: 8rem var(--main-them-color) solid;
+  top: -4rem;
+  right: -13rem;
+  border-left: 8rem var(--main-them-color) solid;
+  z-index: -1;
+}
+
+.about-image img {
+  max-width: 100%;
+}
+
+.about-text {
+  flex-basis: calc(100% - 50rem);
+}
+
+.about-text p:first-of-type {
+  color: #000;
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 5.6rem;
+}
+
+.about-text hr {
+  border-color: var(--main-them-color);
+  width: 90%;
+}
+
+.about-text p:last-of-type {
+  line-height: 1.8;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* End of  about section */
