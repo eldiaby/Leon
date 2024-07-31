@@ -6,6 +6,7 @@
   --heading-primary-color: #ebeced;
   --section-padding: 6rem;
   --section-background: #f6f6f6;
+  --main-transtions-duration: 1s;
 }
 
 
@@ -13,8 +14,14 @@
   box-sizing: border-box;
 }
 
+*::selection {
+  color: var(--secondry-them-color);
+  background-color: var(--main-them-color);
+}
+
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
