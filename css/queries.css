@@ -1,4 +1,5 @@
 @media (max-width: 991px) {
+  /* About section */
   .about-content {
     flex-direction: column;
   }
@@ -14,8 +15,15 @@
 }
 
 @media (max-width: 767px) {
+  /* servises section */
   .srv {
     flex-direction: column;
     text-align: center;
+  }
+  /* contact section */
+
+  .contact-label,
+  .contact-mail-link:link {
+    font-size: 3rem;
   }
 }

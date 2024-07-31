@@ -252,7 +252,7 @@
 .section-portfolio {
   background-color: var(--section-background);
   padding-top: var(--section-padding);
-  padding-bottom: var(--section-padding)
+  padding-bottom: var(--section-padding);
 }
 
 .portfolio-content {
@@ -293,7 +293,7 @@
 
 .section-about {
   padding-top: var(--section-padding);
-  padding-bottom:calc(var(--section-padding) + 6rem)
+  padding-bottom: calc(var(--section-padding) + 6rem);
 }
 
 .about-content {
@@ -360,3 +360,71 @@
 }
 
 /* End of  about section */
+/* ========================================================================================== */
+/* Start of contact section */
+
+.section-contact {
+  background-color: var(--section-background);
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+
+.contact-content {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  text-align: center;
+}
+
+.contact-label {
+  font-size: 3.6rem;
+  font-weight: 800;
+  letter-spacing: -0.2rem;
+  color: var(--secondry-them-color);
+  margin-bottom: 1.5rem;
+}
+
+.contact-mail-link:link,
+.contact-mail-link:active {
+  font-size: 3.2rem;
+  font-weight: 800;
+  display: block;
+  color: var(--main-them-color);
+  text-decoration: none;
+  margin-bottom: 2rem;
+}
+
+.contact-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+}
+
+.contact-icon i {
+  margin-left: 1rem;
+  color: var(--secondry-them-color);
+}
+/* End of  contact section */
+/* ========================================================================================== */
+/* Start of footer  */
+
+.footer {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondry-them-color);
+  color: #fff;
+}
+
+.footer p {
+  font-size: 1.6rem;
+  text-transform: capitalize;
+}
+
+.footer span {
+  font-weight: 600;
+  color: var(--main-them-color);
+}
+
+/* End of  footer */
