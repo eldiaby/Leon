@@ -54,7 +54,7 @@
 
 /* to show && hide the nav links */
 
-.header-nav:hover ul {
+.header-nav ul.block {
   display: block;
 }
 
@@ -235,16 +235,17 @@
   width: 26rem;
 }
 
-/* hide image in the screen under the large screen */
+/*
+/* hide image in the screen under the large screen 
 @media (max-width: 1199px) {
   .servece-image {
     display: none;
   }
-  /* .services-content {
+  .services-content {
     grid-template-columns: repeat(2, 1fr)
-  } */
+  } 
 }
-
+*/
 /* End of services section *
 /* ========================================================================================== */
 /* Start of portfolio section */

@@ -1,5 +1,5 @@
-@media (max-width: 991px) {
-  /* About section */
+/*@media (max-width: 991px) {
+  /* About section 
   .about-content {
     flex-direction: column;
   }
@@ -15,15 +15,64 @@
 }
 
 @media (max-width: 767px) {
-  /* servises section */
+  /* servises section 
   .srv {
     flex-direction: column;
     text-align: center;
   }
-  /* contact section */
+  /* contact section 
 
   .contact-label,
   .contact-mail-link:link {
     font-size: 3rem;
+  }
+}*/
+
+/* ========================================================================================== */
+/* Small desktop : 1200px */
+
+@media (max-width: 75em) {
+  .services-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .services-content .col:last-child {
+    display: none;
+  }
+
+  .about-image {
+    display: none;
+  }
+  .about-text {
+    flex-basis: auto;
+  }
+  .about-text > p {
+    text-align: center;
+  }
+}
+
+/* ========================================================================================== */
+/* Small taplet : 600px */
+
+@media (max-width: 38em) {
+  html {
+    font-size: 50%;
+  }
+  .services-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .srv {
+    flex-direction: column;
+    align-items: center;
+  }
+  .srv-text {
+    text-align: center;
+  }
+}
+
+/* ========================================================================================== */
+/* Small smart phone : 600px */
+@media (max-width: 32em) {
+  html {
+    font-size: 40%;
   }
 }
